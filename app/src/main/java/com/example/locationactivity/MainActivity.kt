@@ -1,18 +1,34 @@
 package com.example.locationactivity
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-        var isFragmentCarLoaded = true;
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val Change = findViewById<Button>(R.id.btnCar)
-        Change.setOnClickListener({})
+
+
     }
+    fun onClickMed(v: View?) {
+        val i = Intent(this, medellin::class.java)
+        startActivity(i)
+    }
+    fun onClickCar(v: View?) {
+        val i = Intent(this, cartagena::class.java)
+        startActivity(i)
+    }
+    fun onClickEsp(v: View?) {
+        val i = Intent(this, espana::class.java)
+        startActivity(i)
+    }
+
+
+
 }

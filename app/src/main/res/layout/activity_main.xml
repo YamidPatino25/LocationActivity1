@@ -7,34 +7,37 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnCar"
+        android:id="@+id/btn_car"
         android:layout_width="209dp"
         android:layout_height="67dp"
         android:layout_marginTop="140dp"
-        android:text="Cual?"
+        android:text="Cartagena"
+        android:onClick="onClickCar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnMed"
+        android:id="@+id/btn_med"
         android:layout_width="209dp"
         android:layout_height="67dp"
         android:layout_marginTop="37dp"
         android:text="Medellín"
+        android:onClick="onClickMed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCar" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_car" />
 
     <Button
-        android:id="@+id/btnEsp"
+        android:id="@+id/btn_esp"
         android:layout_width="209dp"
         android:layout_height="67dp"
         android:layout_marginTop="37dp"
         android:text="España"
+        android:onClick="onClickEsp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMed" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_med" />
 
     <FrameLayout
         android:id="@+id/fragment_holder"
